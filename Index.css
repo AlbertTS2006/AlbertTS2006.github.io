@@ -89,6 +89,7 @@ header {
             line-height: 550px;
            }
            footer{
+            position: absolute;
             bottom: 0;
            }
            .footer-distributed{

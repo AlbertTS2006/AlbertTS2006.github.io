@@ -61,22 +61,61 @@ header {
         }
 
     /* Main */
+
+    .row{
+      margin-top: 30px;
+      text-align:center;
+    }
+    /*columns med regler*/
     .column {
         float: left;
         width: 33.33%;
-        height: 700px;
+        height: 300px;
     }
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
+    /*Nye Regler overskrifter*/
+    .NyeRegler{
+      text-align:center;
+      margin: 40px;
+      border-color: black;
+      background-color: #fafafa;
+      height: 40px;
     }
-    
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    .NyeRegler button{
+      font-size: 80%;
+      width: 70%;
+      height: 100%;
+      border-radius: 25px;
+      margin: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    .column-øvelser{
+      text-align: center;
+      width: 33%;
+      height: 40px;
+      margin-top: 40px;
+      margin-bottom: 100px;
+      display: inline-block;
+    }
+    .Øvelser button{
+      font-size: 80%;
+      width: 70%;
+      height: 100%;
+      border-radius: 25px;
+      margin: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    /*row*/
+      .row::after {
+          content: "";
+          clear: both;
+          display: table;
+      }
+      
+          .row:after {
+              content: "";
+              display: table;
+              clear: both;
+          }
 
     /* Footer */
     .footer-basic {
@@ -115,7 +154,7 @@ header {
       }
       
       .footer-basic .social > a {
-        font-size:24px;
+        font-size:34px;
         width:40px;
         height:40px;
         line-height:40px;
@@ -123,6 +162,7 @@ header {
         text-align:center;
         border-radius:50%;
         border:1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
         margin:0 8px;
         color:inherit;
         opacity:0.75;

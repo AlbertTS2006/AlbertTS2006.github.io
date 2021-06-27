@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation{
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: normal 18px 'Open Sans', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.spacer {
+  flex: 1; 
+}
+
+main {
+  min-height: 25vh;
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+    h1{
+        font: normal 4em 'Verdana', serif;
+        text-align:center;
+    }
+
+    nav {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after{
+            transform: scaleX(1)
+        }
+
+    /* Main */
+    /* Læsmere bokse */
+    .grids-læsmere{
+      margin-top: 30px;
+      text-align:center;
+    }
+    .Læsmere-bokse {
+    float: left;
+    width: 33.33%;
+    height: 300px;
+    }
+    .Læsmere-knap{
+      width: 70px;
+      height: 30px;
+      border-radius: 8px;
+    }
+    #more {display: none;}
+
+
+    /* Footer */
+    .footer-basic {
+      position: relative;
+      bottom: 0px;
+      width: 100%;
+      padding:40px 0;
+      background-color:#ffffff;
+      color:#4b4c4d;
+    }
+    
+    .footer-basic ul {
+      padding:0;
+      list-style:none;
+      text-align:center;
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:0;
+    }
+    
+    .footer-basic li {
+      padding:0 10px;
+      display:inline-block;
+    }
+    
+    .footer-basic ul a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+      opacity:1;
+    }
+    
+    .footer-basic .social {
+      text-align:center;
+      padding-bottom:25px;
+    }
+    
+    .footer-basic .social > a {
+      font-size:36px;
+      width:40px;
+      height:40px;
+      line-height:40px;
+      display:inline-block;
+      text-align:center;
+      border-radius:20%;
+      border:1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+      margin:0 8px;
+      color:inherit;
+      opacity:0.75;
+    }
+    
+    .footer-basic .social > a:hover {
+      opacity:0.9;
+    }
+    
+    .footer-basic .copyright {
+      margin-top:15px;
+      text-align:center;
+      font-size:13px;
+      color:#aaa;
+      margin-bottom:0;
+    }
